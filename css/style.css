@@ -6,73 +6,81 @@ body{
     font-family: sans-serif;
     color: #1F3F68;
 }
-.container {
-    max-width: 1140px;
+.container{
+    width: 1140px;
     margin: 0 auto;
-    }
-.paragraph{
+}
+p{
     font-size: 16px;
     line-height: 26px;
     color: #1F3F68;
 } 
-.heading-2{
+h-2{
     font-weight: 500;
     font-size: 44px;
     text-align: center;
 }
-.heading-3{
+h-3{
     font-size: 36px;
     text-align: center;
 }
-.heading-4{
+h-4{
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
 }
 .menu{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+     
 }
-.main_paragraph{
-    width: 510px;
-}
-.main_heading-1{
+.main_heading{
     font-size: 64px;
     color: #1F3F68;
     width: 510px;
 }
+.main_paragraph{
+    width: 425px;
+}
 .description{
-    width: 359px;  /*?*/  
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-basis: 200px;
+    width: 359px;
+}
+.description_heading{
+    width: 359px;
+}
+.description_paragraph{
+    width: 359px;
 }
 .description_card{
-    width: 359px;  /*?*/ 
-   
+    width: 359px;    
 }
 .footer_woek{
     width: 495px;
 }
-.footer_woek_heading-3{
+.footer_woek_heading{
     width: 340px;
 }
-.footer .footer_contacts{ 
+.footer_contacts_list{ 
     display: flex;
+    flex-wrap: nowrap;
     list-style-type: none;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around; 
 }
-.input{
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+}
+.send_us_input{
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
 }
-.button-submit{
+.send_us_button{
     background: #5A98D0;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
@@ -82,4 +90,12 @@ body{
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+.map{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.map_style{
+    width: 100%;
 }
