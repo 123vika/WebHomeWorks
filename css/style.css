@@ -43,10 +43,12 @@ h-4{
 .main_paragraph{
     width: 425px;
 }
-.description{
+.description_block{
     display: flex;
     justify-content: space-between;
     width: 359px;
+}.description_block_card{
+    width: 359px;    
 }
 .description_heading{
     width: 359px;
@@ -54,9 +56,7 @@ h-4{
 .description_paragraph{
     width: 359px;
 }
-.description_card{
-    width: 359px;    
-}
+
 .footer_woek{
     width: 495px;
 }
@@ -72,7 +72,7 @@ h-4{
 .contact{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;   
+    justify-content: space-around;   
 }
 .send_us_input{
     border: 1px solid #356EAD;
@@ -93,9 +93,9 @@ h-4{
 }
 .map{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .map_style{
-    width: 100%;
+    width: 100%;  
 }
