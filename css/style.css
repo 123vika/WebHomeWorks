@@ -7,7 +7,7 @@ body{
     color: #1F3F68;
 }
 .container{
-    width: 1140px;
+    width: 70%;
     margin: 0 auto;
 }
 p{
@@ -15,16 +15,16 @@ p{
     line-height: 26px;
     color: #1F3F68;
 } 
-h-2{
+h2{
     font-weight: 500;
     font-size: 44px;
     text-align: center;
 }
-h-3{
+h3{
     font-size: 36px;
     text-align: center;
 }
-h-4{
+h4{
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
@@ -56,7 +56,6 @@ h-4{
 .description_paragraph{
     width: 359px;
 }
-
 .footer_woek{
     width: 495px;
 }
@@ -95,7 +94,4 @@ h-4{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-.map_style{
-    width: 100%;  
 }
