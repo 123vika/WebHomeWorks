@@ -304,7 +304,7 @@ hr{
 .contact-us-form{
     width: 540px;
     height: 800px;
-    margin-top: -70px;
+    margin-top: -55px;
     margin-right: 212px;
     margin-bottom: 96px;
     background: #FFFFFF;
@@ -327,8 +327,9 @@ hr{
 .contact-us-form_input{
     margin-left: 56px;
     width: 428px;
-    padding-top: 8px;
-    padding-left: 56px;
+    padding-top: 21px;
+    padding-left: 36px;
+    padding-bottom: 21px;
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
