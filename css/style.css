@@ -7,11 +7,22 @@ body{
     color: #1F3F68;
 }
 .container{
-    width: 70%;
+    max-width: 1140px;
     margin: 0 auto;
 }
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.top-content{
+    flex-grow: 1;
+}
 .top{
-    height: 768px;
+    min-height: 768px;
+}
+.top-main{
+    background-image: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%); 
 }
 .top-box{
     display: flex;
@@ -22,13 +33,14 @@ body{
     display: flex;
     justify-content: 
     space-between;
-    padding: 42px 113px 0;    
+    padding-top: 42px;    
 }
 .top-info{
-    background-image: url('../img/background/menu.png'),  linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    background-image: url('../img/background/menu.png');
     background-repeat: no-repeat;
     background-position: right center ;
     flex-grow: 1;
+    background-size: 44%;
 }
 .top_heading{
     width: 510px;
@@ -80,7 +92,8 @@ body{
     display: flex;
     justify-content: space-between;padding-top: 64px;
     padding-bottom: 64px;
-}.card{
+}
+.card{
     display: flex;
     flex-direction: column;
     width: 359px;
@@ -130,7 +143,7 @@ body{
 .project_img{
     width: 100%;
 }
-.project_text{
+.project-text_min{
     position: absolute;
     top: 64px;
     right: 64px;
@@ -142,7 +155,7 @@ body{
 }
 .project_parent{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 32px;
 }
 .sparklite{
@@ -174,16 +187,16 @@ body{
 }
 .footer{
     margin-top: 112px;
-    background-color:  #316099; 
-    height: 657px;
+    background-color:  #316099;
 }
 .footer-woek{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:center;
     padding-top: 91px;
+    
 }
-.footer-woek_block{
+.footer-woek_block-heading{
     width: 495px;
 }
 .footer-woek_heading{
@@ -199,10 +212,13 @@ body{
     padding-bottom: 96px;
     color: #FFFFFF;
 }
-.footer-woek_link{
+.footer-woek_button{
+    width: 236.63px;
+    height: 56px;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
+    text-decoration: none;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background: #5A98D0;
@@ -214,20 +230,40 @@ hr{
 }
 .list{
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
     padding-top: 64px; 
-    text-decoration: none;
+}
+.smart:first-child::before{
+    content: 'A.';
+    display: block;
+    margin-right: 16px;
+}
+.smart:nth-child(2)::before{
+    content: 'T.';
+    display: block;
+    margin-right: 16px;
+}
+.smart:last-child::before{
+    content: 'E.';
+    display: block;
+    margin-right: 16px;
 }
 .footer-contacts_text{
-    color: #FFFFFF;
+    display: flex;
     opacity: 1; 
+    flex-grow: 1;
+    flex-basis: 33.33%;
+    margin-right: 32px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
 }
 .none-decoration{
     text-decoration: none;
 }
 .footer-rights{
-   padding-top: 64px; 
+   padding: 64px 0;
 }
 .footer-rights_text{
     color: #FFFFFF;
@@ -263,8 +299,7 @@ hr{
 }
 .contact{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .contact-us_img{
     margin-top: 25px;
@@ -305,7 +340,6 @@ hr{
     width: 540px;
     height: 800px;
     margin-top: -55px;
-    margin-right: 212px;
     margin-bottom: 96px;
     background: #FFFFFF;
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
@@ -353,4 +387,177 @@ hr{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+@media(max-width: 1024px) {
+    .container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .top-info{
+        background-position: right 280px ;
+    }
+    .card-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin-bottom: 32px;
+    }
+    .footer{
+        margin-top: 109px; 
+    }
+    .footer-woek{
+        padding-top: 47px;
+    }
+    .footer-woek_block-heading{
+        width: 336px;
+    }
+    .footer-woek_text{
+        padding-bottom: 64px;
+    }
+    .footer-woek_button{
+        width: 133.04px;
+        height: 31.48px;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .smart{
+        margin-bottom: 25px;
+    }
+    .footer-contacts_text{
+        display: flex; 
+        flex-basis: 100%;
+    }
+    .footer-rights{
+        padding-top: 39px;
+    }
+}
+@media(max-width: 667px){
+    .header{
+        padding-top: 24px;
+    }
+    .top{
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+    .top-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 36px;
+        background-image: none;
+    }
+    .top_heading{
+        width: 100%;
+        margin-bottom: 12px;
+        padding-top: 0;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+    }
+    .top_text{
+        width: 100%; 
+        text-align: center;  
+    }
+    .top_button{
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+    }
+    .what-we-do{
+        padding: 48px; 
+    }
+    .heading{
+        font-size: 24px;
+        line-height: 28px; 
+    }
+    .card{
+        width: 100%;
+    }
+    .card-box{
+        padding-top: 32px;
+    }
+    .project-text{
+        width: 100%;
+    }
+    .project-text_min{
+    font-size: 16px;
+    line-height: 19px;
+    top: 16px;
+    right: 16px;
+    }
+    .project_parent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sparklite{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .sparklite-text{
+        font-size: 16px;
+        line-height: 19px;
+        top: 26px;
+        left: 16px;
+    }
+    .car{
+        width: 100%;
+    }
+    .car-text{
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        left: 16px;
+    }
+    .footer{
+        margin-top: 64px; 
+    }
+    .footer-woek{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-woek_block-heading{
+        width: 375px;
+    }
+    .footer-woek_heading{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .footer-woek_text{
+        padding-bottom: 40px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .footer-woek_button{
+        width: 108.23px;
+        height: 31.48px;
+    }
+    hr{
+        margin-top: 41px;
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .smart{
+        margin-bottom: 17px;
+    }
+    .footer-contacts_text{
+        display: flex;
+        flex-basis: 100%;
+        line-height: 19px;
+        padding-bottom: 17px;
+    }
+    .footer-rights{
+        padding: 20px 0 32px 0;
+        text-align: center;
+    }
 }
