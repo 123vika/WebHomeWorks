@@ -90,7 +90,8 @@ body{
 }
 .card-box{
     display: flex;
-    justify-content: space-between;padding-top: 64px;
+    justify-content: space-between;
+    padding-top: 64px;
     padding-bottom: 64px;
 }
 .card{
@@ -193,8 +194,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items:center;
-    padding-top: 91px;
-    
+    padding-top: 91px;  
 }
 .footer-woek_block-heading{
     width: 495px;
@@ -270,7 +270,7 @@ hr{
     opacity: 0.4;  
 }
 .top-contact{
-    height: 471px;
+    min-height: 471px;
 }
 .top-contact-info {
     background-image: url('../img/background/top-contact-bg.png');
@@ -388,14 +388,13 @@ hr{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
     .container{
         padding-left: 32px;
-        padding-right: 32px;
+        padding-right: 32px;  
     }
     .top-info{
-        background-position: right 280px ;
+        background-position: right 210px ;
     }
     .card-box{
         display: flex;
@@ -418,23 +417,75 @@ hr{
         padding-bottom: 64px;
     }
     .footer-woek_button{
-        width: 133.04px;
-        height: 31.48px;
+        width: 133px;
+        height: 31px;
     }
-    .list{
+    .list {
         display: flex;
         flex-direction: column;
-        align-items: center;
-    } 
+        padding-top: 64px;
+        margin-left: 114px;
+    }
     .smart{
         margin-bottom: 25px;
     }
     .footer-contacts_text{
         display: flex; 
+        flex-grow: 1;
         flex-basis: 100%;
     }
     .footer-rights{
         padding-top: 39px;
+    }
+    .top-contact-info_heading{
+        padding-top:  80px;
+    }
+    .top-contact-info_text{
+        width: 520px;
+        padding-left: 180px;
+        padding-bottom: 40px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-us_img{
+        margin-top: 0;
+        padding-bottom: 64px;
+    }
+    .contact-us_heading{
+        padding-top: 0;
+        padding-left: 237px;
+    }
+    .contact-us_text{
+        margin-left: 237px;
+    }
+    .contact-list{
+        padding-top: 28px;
+        padding-left: 239px;
+    }
+    .contact-us-form{
+        width: 520px;
+        height: 780px;
+        margin: 64px 124px;
+    }
+    .contact-us-form_heading{
+        padding-top: 54px;
+        padding-left: 54px;
+        padding-bottom: 47px;
+    }
+    .contact-us-form_small-heading{
+       padding-left: 54px; 
+       padding-bottom: 8px;
+    }
+    .contact-us-form_input{
+        margin-left: 54px;
+        width: 412px;  
+    }
+    .contact-us-form_button{
+        width: 412.15px;
+        height: 70.2px;
+        margin: 70px 53px 55px;
     }
 }
 @media(max-width: 667px){
@@ -546,6 +597,7 @@ hr{
         display: flex;
         flex-direction: column;
         align-items: start;
+        margin-left: 0;
     }
     .smart{
         margin-bottom: 17px;
@@ -559,5 +611,69 @@ hr{
     .footer-rights{
         padding: 20px 0 32px 0;
         text-align: center;
+    }
+    .top-contact-info_heading{
+        padding-top: 81px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .top-contact-info_text{
+        font-size: 16px;
+        width: 341px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .top-contact-info_heading{
+        padding-top:  30px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .top-contact-info_text{
+        width: 330px;
+        padding: 20px 0;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-us_img{
+        margin: 0;
+    }
+    .contact-us_heading{
+        padding-top: 32px;
+        padding-left: 38px;
+    }
+    .contact-us_text{
+        margin: 0;
+        padding-top: 24px;
+        padding-left: 37px;
+    }
+    .contact-list{
+        margin: 0;
+        padding-top: 38px;
+        padding-left: 42px;
+    }
+    .contact-us-form{
+        margin: 32px 13px;
+        width: 342.67px;
+        height: 514px;
+    }
+    .contact-us-form_heading{
+        padding-top: 36px;
+        padding-left: 36px;
+        padding-bottom: 31px;
+    }
+    .contact-us-form_small-heading{
+        padding-left: 36px; 
+        padding-bottom: 5px;
+     }
+    .contact-us-form_input{
+        margin-left: 35px;
+        width: 271.6px;
+    }
+    .contact-us-form_button{
+        width: 271px;
+        height: 46px;
+        margin: 45px 35px 34px;
     }
 }
