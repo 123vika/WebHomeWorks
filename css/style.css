@@ -404,6 +404,11 @@ hr{
     .card{
         margin-bottom: 32px;
     }
+    .heading-mini{
+        width: 264.06px;
+    }.card-text{
+        width: 250.35px;
+    }
     .footer{
         margin-top: 109px; 
     }
