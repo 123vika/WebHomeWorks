@@ -110,14 +110,14 @@ body{
 }
 .heading-mini{
     margin-bottom: 14px;
-    width: 283px;
+    width: 100%;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.05em;
     color: #1F3F68;
 }
 .card-text{
-    width: 268px;
+    width: 100%;
     margin-top: 14px;
 }
 .card-link{
@@ -276,7 +276,7 @@ hr{
     background-image: url('../img/background/top-contact-bg.png');
     background-repeat: no-repeat;
     background-position: center;
-    flex-grow: 0.3;
+    flex-grow: 0.1;
 }
 .top-contact-info_heading{
     padding-top: 105px;
@@ -290,7 +290,8 @@ hr{
 .top-contact-info_text{
     width: 780px;
     padding-top: 16px;
-    padding-left: 365px;
+    padding-bottom: 106px;
+    padding-left: 293px;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
@@ -410,10 +411,11 @@ hr{
         width: 250.35px;
     }
     .footer{
-        margin-top: 109px; 
+        margin-top: 109px;    
     }
     .footer-woek{
         padding-top: 47px;
+        padding-left: 112px;
     }
     .footer-woek_block-heading{
         width: 336px;
@@ -429,7 +431,7 @@ hr{
         display: flex;
         flex-direction: column;
         padding-top: 64px;
-        margin-left: 114px;
+        padding-left: 112px;
     }
     .smart{
         margin-bottom: 25px;
@@ -441,6 +443,7 @@ hr{
     }
     .footer-rights{
         padding-top: 39px;
+        padding-left: 112px;
     }
     .top-contact-info_heading{
         padding-top:  80px;
@@ -456,10 +459,10 @@ hr{
     }
     .contact-us_img{
         margin-top: 0;
-        padding-bottom: 64px;
+        padding-bottom: 44px;
     }
     .contact-us_heading{
-        padding-top: 0;
+        padding-top: 20;
         padding-left: 237px;
     }
     .contact-us_text{
@@ -578,15 +581,18 @@ hr{
     .footer-woek{
         display: flex;
         flex-direction: column;
+        padding-left: 16px;
     }
     .footer-woek_block-heading{
-        width: 375px;
+        width: 100%;
     }
     .footer-woek_heading{
+        width: 100%;
         font-size: 24px;
         line-height: 28px;
     }
     .footer-woek_text{
+        width: 100%;
         padding-bottom: 40px;
         font-size: 16px;
         line-height: 26px;
@@ -594,6 +600,7 @@ hr{
     .footer-woek_button{
         width: 108.23px;
         height: 31.48px;
+        padding: 5px 25px;
     }
     hr{
         margin-top: 41px;
@@ -602,7 +609,7 @@ hr{
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin-left: 0;
+        padding-left: 16px;
     }
     .smart{
         margin-bottom: 17px;
@@ -614,27 +621,23 @@ hr{
         padding-bottom: 17px;
     }
     .footer-rights{
-        padding: 20px 0 32px 0;
+        padding-top: 20px;
+        padding-bottom: 32px;
+        padding-left: 15px;
         text-align: center;
     }
+    .top-contact-info{
+        flex-grow: 0.5
+    }
     .top-contact-info_heading{
-        padding-top: 81px;
+        padding-top: 61px;
         font-size: 24px;
         line-height: 28px;
     }
     .top-contact-info_text{
         font-size: 16px;
-        width: 341px;
-        padding: 0;
+        width: 100%;
         margin: 0 auto;
-    }
-    .top-contact-info_heading{
-        padding-top:  30px;
-        font-size: 24px;
-        line-height: 28px;
-    }
-    .top-contact-info_text{
-        width: 330px;
         padding: 20px 0;
     }
     .contact{
@@ -643,6 +646,7 @@ hr{
     }
     .contact-us_img{
         margin: 0;
+        margin-bottom: 32px;
     }
     .contact-us_heading{
         padding-top: 32px;
